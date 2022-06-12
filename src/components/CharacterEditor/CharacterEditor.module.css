@@ -1,18 +1,9 @@
-.mainBackground {
-  position: fixed;
-  bottom: 0;
-  height: 40vh;
-  width: 100vw;
-  background: hsl(195deg, 20%, 86%);
-}
-
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
 }
 
 .maxWidthWrapper {
-  margin-left: 0;
   position: relative;
 }
 
@@ -45,4 +36,13 @@
 
 .controlColumn {
   width: 50%;
+}
+
+.perspectiveEffect {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  background: hsl(195deg, 20%, 86%);
 }
