@@ -24,14 +24,3 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
-
-.scrollingOptions {
-  display: flex;
-  overflow-x: auto;
-  margin-right: -22px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-.button {
-  flex-shrink: 0;
-}

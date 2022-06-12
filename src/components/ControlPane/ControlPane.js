@@ -22,21 +22,17 @@ const ControlPane = ({
         </span>
             </h2>
             <ButtonRow>
-                <div className={styles.scrollingOptions}>
-                    {options.map(({id, label, color, children}) => (
-                        <div className={styles.button}>
-                            <ToggleButton
-                                key={id}
-                                isSelected={currentOption === id}
-                                onClick={() => handleSelectOption(id)}
-                                label={label}
-                                color={color}
-                            >
-                                {children}
-                            </ToggleButton>
-                        </div>
-                    ))}
-                </div>
+                {options.map(({id, label, color, children}) => (
+                    <ToggleButton
+                        key={id}
+                        isSelected={currentOption === id}
+                        onClick={() => handleSelectOption(id)}
+                        label={label}
+                        color={color}
+                    >
+                        {children}
+                    </ToggleButton>
+                ))}
             </ButtonRow>
         </div>
     );
